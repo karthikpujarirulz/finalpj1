@@ -10,13 +10,9 @@ const nextConfig = {
     unoptimized: true,
     domains: ['localhost'],
   },
-  experimental: {
-    serverComponentsExternalPackages: ['@supabase/supabase-js'],
-  },
+  serverExternalPackages: ['@supabase/supabase-js'],
   // Ensure proper handling of client-side routing
   trailingSlash: false,
-  // Enable SWC minification for better performance
-  swcMinify: true,
 }
 
 export default nextConfig
